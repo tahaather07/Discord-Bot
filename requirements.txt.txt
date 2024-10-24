@@ -1,0 +1,4 @@
+discord.py
+spotipy
+yt-dlp
+async-timeout
