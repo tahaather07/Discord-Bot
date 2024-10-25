@@ -1,3 +1,3 @@
 #!/bin/bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
+export LD_LIBRARY_PATH=/usr/local/lib:/usr/lib:/lib
+python discordBot.py

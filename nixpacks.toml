@@ -1,10 +1,8 @@
 [phases.setup]
-nixPkgs = [
-    'python311',
-    'ffmpeg',
-    'gcc',
-    'opus',
-    'libopus',
-    'pkg-config',
-    'python311Packages.wheel'
+aptPkgs = ['python3.11', 'python3-pip', 'ffmpeg', 'libopus0', 'libopus-dev', 'opus-tools']
+
+[phases.build]
+cmds = [
+    'python -m pip install --upgrade pip',
+    'pip install -r requirements.txt'
 ]
