@@ -1,11 +1,18 @@
 [phases.setup]
-nixPkgs=["python3","python3Packages.pip","ffmpeg"]
+nixPkgs=[
+    "python310",
+    "ffmpeg",
+    "opus",
+    "python310Packages.pip",
+    "gcc",
+    "libffi",
+    "libsodium"
+]
 
 [phases.install]
 cmds=[
-    "python3 -m ensurepip --upgrade",
-    "python3 -m pip install --upgrade pip",
-    "python3 -m pip install -r requirements.txt"
+    "pip install --upgrade pip",
+    "pip install -r requirements.txt"
 ]
 
 [start]
