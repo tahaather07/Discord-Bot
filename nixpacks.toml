@@ -1,17 +1,11 @@
 [phases.setup]
 nixPkgs=[
     "python310",
-    "ffmpeg",
-    "opus",
-    "python310Packages.pip",
-    "gcc",
-    "libffi",
-    "libsodium"
+    "ffmpeg"
 ]
 
 [phases.install]
 cmds=[
-    "pip install --upgrade pip",
     "pip install -r requirements.txt"
 ]
 
